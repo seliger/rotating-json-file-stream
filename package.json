@@ -1,26 +1,28 @@
 {
-  "name": "rotating-file-stream",
-  "version": "1.2.2",
-  "description": "Opens a stream.Writable to a file rotated by interval and/or size. A logrotate alternative.",
+  "name": "rotating-json-file-stream",
+  "version": "1.0.0",
+  "description": "Opens a stream accepting JSON objects. Streams JSON object array rotated by interval and/or size.",
   "scripts": {
     "all": "npm run npmignore && npm run eslint && npm run coverage",
-    "coverage": "TZ=\"Europe/Rome\" ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --recursive test",
+    "coverage": "TZ=\"America/Indiana/Indianapolis\" ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --recursive test",
     "eslint": "./node_modules/.bin/eslint *.js test/*js",
     "npmignore": "echo '.codeclimate.yml\\n.eslintrc\\n.gitignore\\n.travis.yml\\ntest' > .npmignore ; cat .gitignore >> .npmignore",
-    "test": "TZ=\"Europe/Rome\" ./node_modules/.bin/_mocha test"
+    "test": "TZ=\"America/Indiana/Indianapolis\" ./node_modules/.bin/_mocha test"
   },
-  "bugs": "https://github.com/iccicci/rotating-file-stream/issues",
-  "repository": "https://github.com/iccicci/rotating-file-stream",
+  "bugs": "https://github.com/seliger/rotating-json-file-stream/issues",
+  "repository": "https://github.com/seliger/rotating-json-file-stream",
   "keywords": [
-    "log",
-    "rotate",
-    "logrotate"
+    "json",
+    "file",
+    "stream",
+    "rotate"
   ],
   "engines": {
     "node": ">=0.11"
   },
-  "author": "Daniele Ricci <daniele.icc@gmail.com> (https://github.com/iccicci)",
+  "author": "Corey S. Seliger <corey@seligerfamily.org> (https://github.com/seliger)",
   "contributors": [
+    "iccicci",
     "allevo"
   ],
   "license": "MIT",
